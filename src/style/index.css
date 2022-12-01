@@ -42,31 +42,31 @@ li{
     opacity: 0.8;
 }
 .gallery1_item1{
-    background-image: url(/src/image/Jezael\ Melgoza.png); 
+    background-image: url(../image/jezaelmelgoza.png); 
     grid-area: a;
     width: 370px;
 }
 .gallery1_item2{
-    background-image: url(/src/image/tonw.png);
+    background-image: url(../image/tonw.png);
   grid-area: b;
   width: 770px;
 }
 .gallery1_item3{
-    background-image: url(/src/image/Johan\ Mouchet.png);
+    background-image: url(../image/johanmouchet.png);
     grid-area: c;
     width: 770px;
 }
 .gallery1_item4{
-    background-image: url(/src/image/image-1-2.png);
+    background-image: url(../image/image-1-2.png);
     grid-area: d;
     width: 370px;
 }
 .gallery1_item5{
-    background-image: url(/src/image/image-1.png);
+    background-image: url(../image/image-1.png);
     grid-area: e;
 }
 .gallery1_item6{
-    background-image: url(/src/image/image.png);
+    background-image: url(../image/image.png);
     grid-area: g;
 }
 .item_name{
