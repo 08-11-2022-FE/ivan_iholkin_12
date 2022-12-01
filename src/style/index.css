@@ -1,0 +1,100 @@
+body{
+    width: 1440px;
+    margin: 0 auto;
+}
+section{
+    width: 1170px;
+    margin: 0 auto;
+}
+p{
+    text-align: center;
+    font-family: 'Delius Unicase';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #000000;
+    margin-top: 120px;
+    margin-bottom: 80px;
+}
+ul{
+    display: grid;
+    /* grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;  */
+    
+    grid-template-areas: "a b b" "c c d" "e g g";
+    gap: 30px;
+   
+}
+.gallery1{
+    width: 1170px;
+    height: 1170px;
+    margin: 0 auto;
+}
+li{
+    display: grid;
+    grid-template-columns: auto auto ;
+    align-content: space-between;
+    justify-content: space-between ;
+    border-radius: 20px;
+    opacity: 0.8;
+}
+.gallery1_item1{
+    background-image: url(/src/image/Jezael\ Melgoza.png); 
+    grid-area: a;
+    width: 370px;
+}
+.gallery1_item2{
+    background-image: url(/src/image/tonw.png);
+  grid-area: b;
+  width: 770px;
+}
+.gallery1_item3{
+    background-image: url(/src/image/Johan\ Mouchet.png);
+    grid-area: c;
+    width: 770px;
+}
+.gallery1_item4{
+    background-image: url(/src/image/image-1-2.png);
+    grid-area: d;
+    width: 370px;
+}
+.gallery1_item5{
+    background-image: url(/src/image/image-1.png);
+    grid-area: e;
+}
+.gallery1_item6{
+    background-image: url(/src/image/image.png);
+    grid-area: g;
+}
+.item_name{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px; 
+    color: #FFFFFF; 
+}
+.date{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #E0E0E0; 
+}
+svg{
+   margin: 20px;
+   visibility: hidden;
+}
+span{
+    margin: 20px;
+}
+li:hover svg{
+    visibility: visible;
+} 
+li:hover{
+    opacity: 1;
+}
