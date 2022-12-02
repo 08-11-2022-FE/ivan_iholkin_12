@@ -167,7 +167,8 @@ li:hover{
                          "r r p";
     gap: 30px;   
     width: 1170px;
-    height: 1970px;                  
+    height: 1970px; 
+    margin-bottom: 120px;                 
 }  
 
 .gallery3_item1{
