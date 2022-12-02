@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'Delius Unicase';
+    src: url(../fonts/Delius_Unicase/DeliusUnicase-Regular.ttf);
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto-2/Roboto-Medium.ttf);
+}
 body{
     width: 1440px;
     margin: 0 auto;
@@ -90,6 +98,9 @@ svg{
 }
 span{
     margin: 20px;
+   
+/* Gray 5 */
+color: #E0E0E0;
 }
 li:hover svg{
     visibility: visible;
@@ -147,3 +158,62 @@ li:hover{
     background-image:url(../image/gal2_6.png)
 }      
     
+.gallery3{
+    display: grid;
+    grid-template-areas: "a b c"
+                         "d b e"
+                         "f g e"
+                         "f s s"
+                         "r r p";
+    gap: 30px;   
+    width: 1170px;
+    height: 1970px;                  
+}  
+
+.gallery3_item1{
+    grid-area: a;
+    background-image:url(../image/gal3_1.png)
+
+}
+
+.gallery3_item2{
+    grid-area: b;
+    background-image:url(../image/gal3_2.png)
+}
+
+.gallery3_item3{
+    grid-area: c;
+    background-image:url(../image/gal3_3.png)
+}
+
+.gallery3_item4{
+    grid-area: d;
+    background-image:url(../image/gal3_4.png)
+}
+
+.gallery3_item5{
+    grid-area: e;
+    background-image:url(../image/gal3_5.png)
+}
+
+.gallery3_item6{
+    grid-area: f;
+    background-image:url(../image/gal3_6.png)
+}
+.gallery3_item7{
+    grid-area: g;
+    background-image:url(../image/gal3_7.png)
+}
+.gallery3_item8{
+    grid-area: s;
+    background-image:url(../image/gal3_8.png)
+}
+.gallery3_item9{
+    grid-area: r;
+    background-image:url(../image/gal3_9.png)
+}
+
+.gallery3_item10{
+    grid-area: p;
+    background-image:url(../image/gal3_10.png)
+}
