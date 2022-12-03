@@ -33,7 +33,7 @@ p{
     grid-template-rows: auto auto auto;  */
     
     grid-template-areas: "a b b" "c c d" "e g g";
-    gap: 30px;
+    grid-gap: 30px;
     width: 1170px;
     height: 1170px;
     margin: 0 auto;
@@ -101,6 +101,7 @@ li{
 svg{
    margin: 20px;
    visibility: hidden;
+   opacity: 0.8;
 }
 span{
     margin: 20px;
@@ -114,6 +115,10 @@ li:hover svg{
 li:hover{
     opacity: 1;
 }
+svg:hover{
+    opacity: 1;
+}
+
 .gallery2{
     display: grid;
     grid-template-areas: "a b b"
@@ -219,7 +224,7 @@ li:hover{
 }
 .gallery3_item7{
     grid-area: g;
-    background-image:url(../image/gal3_7.png);
+    background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%),url(../image/gal3_7.png);
     background-size: cover;
 }
 .gallery3_item8{
