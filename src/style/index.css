@@ -1,0 +1,251 @@
+@font-face {
+    font-family: 'Delius Unicase';
+    src: url(../fonts/Delius_Unicase/DeliusUnicase-Regular.ttf);
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto-2/Roboto-Medium.ttf);
+}
+* {
+    transition: all 0.3s ease 0s; 
+}
+body{
+    width: 1440px;
+    margin: 0 auto;
+}
+section{
+    width: 1170px;
+    margin: 0 auto;
+}
+p{
+    text-align: center;
+    font-family: 'Delius Unicase';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #000000;
+    margin-top: 120px;
+    margin-bottom: 80px;
+}
+.gallery1{
+    display: grid;   
+    grid-template-areas: "a b b" "c c d" "e g g";
+    grid-gap: 30px;
+    width: 1170px;
+    height: 1170px;
+    margin: 0 auto;
+   
+}
+
+li{
+    display: grid;
+    grid-template-columns: auto auto ;
+    align-content: space-between;
+    justify-content: space-between ;
+    border-radius: 20px;
+    opacity: 0.8;
+}
+.gallery1_item1{
+    
+    background-size: cover;
+    grid-area: a;
+    width: 370px;
+    background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(../image/jezaelmelgoza.png);  
+}
+.gallery1_item2{
+    background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%),url(../image/tonw.png);
+    grid-area: b;
+     width: 770px;
+    background-size: cover;
+}
+.gallery1_item3{
+    background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%),url(../image/johanmouchet.png);
+    background-size: cover;
+    grid-area: c;
+    width: 770px;
+}
+.gallery1_item4{
+    background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(../image/image-1-2.png);
+    background-size: cover;
+    grid-area: d;
+    width: 370px;
+}
+.gallery1_item5{
+    background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%),url(../image/image-1.png);
+    grid-area: e;
+}
+.gallery1_item6{
+    background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(../image/image.png);
+    background-size: cover;
+    grid-area: g;
+}
+.item_name{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px; 
+    color: #FFFFFF; 
+}
+.date{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #E0E0E0; 
+}
+img{
+   margin: 20px;
+   visibility: hidden;
+   opacity: 0.6;
+   background: #E0E0E0;
+   border-radius: 8px;
+}
+li img:nth-child(2){
+    margin-left: auto;
+}
+span{
+    margin: 20px;
+    color: #E0E0E0;
+}
+li:hover img{
+    visibility: visible;
+} 
+li:hover{
+    opacity: 1;
+}
+img:hover{
+    opacity: 1;
+    background: #E0E0E0;
+    border-radius:15px
+}
+
+.gallery2{
+    display: grid;
+    grid-template-areas: "a b b"
+                         "c c d"
+                         "c c d"
+                         "e e f";
+    gap: 30px;                     
+
+}  
+
+
+.gallery2_item1{
+    grid-area: a;
+    width: 370px;
+    height: 370px;
+    background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%),url(../image/gal2_1.png);
+    background-size: cover;
+}                      
+
+.gallery2_item2{
+    grid-area: b;
+    width: 770px;
+    height: 370px;
+    background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%),url(../image/gal2_2.png);
+    background-size: cover;
+}    
+.gallery2_item3{
+    grid-area: c;
+    width: 770px;
+    height: 770px;
+    background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%),url(../image/gal2_3.png);
+}      
+         
+.gallery2_item4{
+    grid-area: d;
+    width: 370px;
+    height: 770px;
+    background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%),url(../image/gal2_4.png);
+    background-size: cover;
+}      
+   
+.gallery2_item5{
+    grid-area: e;
+    width: 770px;
+    height: 370px;
+    background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(../image/gal2_5.png);
+    background-size: cover;
+}      
+    
+.gallery2_item6{
+    grid-area: f;
+    width: 370px;
+    height: 370px;
+    background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%),url(../image/gal2_6.png);
+    background-size: cover;
+}      
+    
+.gallery3{
+    display: grid;
+    grid-template-areas: "a b c"
+                         "d b e"
+                         "f g e"
+                         "f s s"
+                         "r r p";
+    grid-gap: 30px;   
+    width: 1170px;
+    height: 1970px; 
+    margin-bottom: 120px;                 
+}  
+
+.gallery3_item1{
+    grid-area: a;
+    background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(../image/gal3_1.png);
+    background-size: cover;
+
+}
+
+.gallery3_item2{
+    grid-area: b;
+    background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%),url(../image/gal3_2.png);
+    background-size: cover;
+}
+
+.gallery3_item3{
+    grid-area: c;
+    background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%),url(../image/gal3_3.png);
+}
+
+.gallery3_item4{
+    grid-area: d;
+    background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%),url(../image/gal3_4.png);
+    background-size: cover;
+}
+
+.gallery3_item5{
+    grid-area: e;
+    background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%),url(../image/gal3_5.png);
+    background-size: cover;
+}
+
+.gallery3_item6{
+    grid-area: f;
+    background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%),url(../image/gal3_6.png);
+    background-size: cover;
+}
+.gallery3_item7{
+    grid-area: g;
+    background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%),url(../image/gal3_7.png);
+    background-size: cover;
+}
+.gallery3_item8{
+    grid-area: s;
+    background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%),url(../image/gal3_8.png);
+}
+.gallery3_item9{
+    grid-area: r;
+    background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%),url(../image/gal3_9.png);
+    background-size: cover;
+}
+
+.gallery3_item10{
+    grid-area: p;
+    background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%),url(../image/gal3_10.png);
+    background-size: cover;
+}
