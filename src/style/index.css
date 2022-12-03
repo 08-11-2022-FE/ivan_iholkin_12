@@ -6,6 +6,9 @@
     font-family: 'Roboto';
     src: url(../fonts/Roboto-2/Roboto-Medium.ttf);
 }
+* {
+    transition: all 0.3s ease 0s; 
+}
 body{
     width: 1440px;
     margin: 0 auto;
@@ -98,7 +101,9 @@ li{
 img{
    margin: 20px;
    visibility: hidden;
-   opacity: 0.8;
+   opacity: 0.6;
+   background: #E0E0E0;
+   border-radius: 8px;
 }
 li img:nth-child(2){
     margin-left: auto;
@@ -115,6 +120,8 @@ li:hover{
 }
 img:hover{
     opacity: 1;
+    background: #E0E0E0;
+    border-radius:15px
 }
 
 .gallery2{
